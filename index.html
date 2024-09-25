@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visage</title>
+    <style>
+        /* CSS Geral */
+        body {
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            background-color: #FFD700;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .content-section {
+            padding: 30px;
+        }
+
+        .category {
+            margin-bottom: 40px;
+        }
+
+        .category h2 {
+            color: #FFD700;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .grid-item img {
+            width: 100%;
+            transition: transform 0.5s ease;
+        }
+
+        .grid-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .grid-item .description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.8);
+            color: #FFD700;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .grid-item:hover .description {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Streaming</h1>
+        <nav>
+            <ul>
+                <li><a href="#series">Séries</a></li>
+                <li><a href="#filmes">Filmes</a></li>
+                <li><a href="#desenhos">Desenhos</a></li>
+                <li><a href="#animes">Animes</a></li>
+                <li><a href="#doramas">Doramas</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#avaliacoes">Avaliações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-section" id="series">
+        <div class="category">
+            <h2>Séries</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="1.jpg" alt="Série 1">
+                    <div class="description">Ross, Rachel, Mônica, Chandler, Joey e Phoebe formam um grupo de seis amigos que lutam para se sobressair e progredir na competitiva vida de Manhattan. Seu humor inteligente e apoio mútuo incondicional fazem com sua amizade seja cada vez mais forte, superando assim todos os obstáculos que a vida lhes apresenta.</div>
+                </div>
+                <div class="grid-item">
+                    <img src="2.jpg" alt="Série 2">
+                    <div class="description">"How I Met Your Mother" é uma comédia que conta a vida amorosa de Ted. Tudo começou quando o seu melhor amigo, Marshall, lança a bomba de que pedirá a sua namorada de longa data, Lily (uma professora do jardim de infância), em casamento.</div>
+                </div>
+                <!-- Mais séries -->
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section" id="filmes">
+        <div class="category">
+            <h2>Filmes</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="3.jpg" alt="Filme 1">
+                    <div class="description">A morte do treinador de basquete de infância de velhos amigos reúne a turma no mesmo lugar que celebraram um campeonato anos atrás. Os amigos, acompanhados de suas esposas e filhos, descobrem que idade não significa o mesmo que maturidade.</div>
+                </div>
+                <div class="grid-item">
+                    <img src="4.jpg" alt="Filme 2">
+                    <div class="description">Dois irmãos agentes do FBI, Marcus e Kevin Copeland, acidentalmente evitam que bandidos sejam presos em uma apreensão de drogas. Como castigo, eles são forçados a escoltar um par de socialites nos Hamptons. Quando as meninas descobrem o plano da agência, elas se recusam a ir. Sem opções, Marcus e Kevin, dois homens negros, decidem fingir que são as irmãs e se transformam em um par de loiras.</div>
+                </div>
+                <!-- Mais filmes -->
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section" id="desenhos">
+        <div class="category">
+            <h2>Desenhos</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="5.jpg" alt="Desenho 1">
+                    <div class="description">O jovem Finn e seu fiel cachorro transmorfo embarcam em uma série de aventuras na pós-apocalítica Terra de Ooo. Assista o quanto quiser. Esta animação irreverente ganhou seis prêmios Emmy, incluindo Melhor Série Animada de Curta Duração.</div>
+                </div>
+                <div class="grid-item">
+                    <img src="6.jpg" alt="Desenho 2">
+                    <div class="description">Velma, Daphne, Fred e Salsicha são um grupo de amigos que resolvem crimes e mistérios com a ajuda de Scooby-Doo, um cão tão grande quanto atrapalhado.</div>
+                </div>
+                <!-- Mais desenhos -->
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section" id="animes">
+        <div class="category">
+            <h2>Animes</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="7.jpg" alt="Anime 1">
+                    <div class="description">Criada por Akira Toryiama, a franquia conta a história de Son Goku, guerreiro que descobre ser parte de um legado de poderosos conquistadores alienígenas - e passa a defender seu planeta adotivo, a Terra, de outros seres igualmente superfortes e capazes de feitos descomunais.</div>
+                </div>
+                <div class="grid-item">
+                    <img src="8.jpg" alt="Anime 2">
+                    <div class="description">Adaptada da série de manga homônima, One Piece é um anime que conta a história do jovem Monkey D. Luffy, que ganhou poderes de borracha depois de comer uma fruta do diabo. O enredo mostra as aventuras de Luffy e seu grupo, Os Piratas de Chapéu de Palha, em busca do One Piece, o tesouro mais procurado do mundo.</div>
+                </div>
+                <!-- Mais animes -->
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section" id="doramas">
+        <div class="category">
+            <h2>Doramas</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="9.jpg" alt="Dorama 1">
+                    <div class="description">Na comédia romântica Beleza Verdadeira, Lim Ju-kyung (Moon Ga-young) é uma menina de aparência comum que, da noite para o dia, se torna a garota mais popular por ser bonita. Por anos a jovem sofreu bullying de familiares e colegas de classe, até decidir como usar maquiagem a seu favor assistindo vídeos tutoriais no YouTube. Depois de dominar a arte, Lim Ju-kyung muda e se torna uma das garotas mais admiradas em seu novo colégio. Contudo, ela ainda carrega muita insegurança e baixa autoestima, optando por nunca revelar o rosto sem maquiagem aos novos colegas. Isso muda quando Lee Su-ho (Cha Eun-woo) a vê de rosto limpo e a reconhece. Su-ho também é um garoto popular na escola, mas prefere não ser o centro das atenções, constantemente se mantendo frio e distante dos outros. Por conta dos segredos que compartilham, Lee Su-ho e Lim Ju-kyung se aproximam e agora ela deve encontrar sua beleza verdadeira.</div>
+                </div>
+                <div class="grid-item">
+                    <img src="10.jpg" alt="Dorama 2">
+                    <div class="description"Um acidente de parapente leva uma herdeira sul-coreana à Coreia do Norte. Ali, ela acaba conhecendo um oficial do exército, que vai ajudá-la a se esconder. Assista o quanto quiser. O amor não reconhece fronteiras neste romance tempestuoso, estrelado por Hyun Bin e Son Ye-jin.</div>
+                </div>
+                <!-- Mais doramas -->
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section" id="planos">
+        <div class="category">
+            <h2>Planos de Assinatura</h2>
+            <p>Plano Básico: R$ 19,90/mês - Acesso a filmes e séries</p>
+            <p>Plano Padrão: R$ 29,90/mês - Acesso a filmes, séries e animes</p>
+            <p>Plano Premium: R$ 39,90/mês - Acesso a todo o catálogo</p>
+        </div>
+    </div>
+
+    <div class="content-section" id="avaliacoes">
+        <div class="category">
+            <h2>Avaliações</h2>
+            <p>"Adorei o conteúdo, muito variado e de qualidade!" - Maria Clara Albuquerque</p>
+            <p>"Planos acessíveis e muitas opções de entretenimento." - João Santos Oliveira</p>
+            <!-- Mais avaliações -->
+        </div>
+    </div>
+</body>
+</html>
